@@ -1,7 +1,7 @@
 import logo from '../../assets/img/logoTienda.png'
 import { Carrito } from './carrito'
 
-export const Header = () => {
+export const Navbar = () => {
 
 return (
 

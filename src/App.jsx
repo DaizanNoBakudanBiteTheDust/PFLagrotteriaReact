@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
-import {  Header } from './components/header/header'
+import {  Navbar } from './components/header/navbar'
 import {ItemListContainer} from './components/itemListContainer'
 
 function App() {
 
   return (
 <div>
-    <Header />
+    <Navbar />
     <ItemListContainer />
 </div>
 
