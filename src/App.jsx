@@ -1,16 +1,16 @@
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
-import {  Header } from './components/header'
+import {  Header } from './components/header/header'
+import {ItemListContainer} from './components/itemListContainer'
 
 function App() {
 
   return (
-    <header>
-    < Header />
-
-      <h1>Hola</h1> 
-    </header>
+<div>
+    <Header />
+    <ItemListContainer />
+</div>
 
   )
 }

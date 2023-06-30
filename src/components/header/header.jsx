@@ -1,4 +1,5 @@
-import logo from '../assets/img/logoTienda.png'
+import logo from '../../assets/img/logoTienda.png'
+import { Carrito } from './carrito'
 
 export const Header = () => {
 
@@ -28,6 +29,9 @@ return (
                         </ul>
                     </div>
                 </div>
+               
+                    <Carrito />
+                
             </nav>
 )
 
