@@ -1,7 +1,9 @@
 export const ItemListContainer = () => {
 
     return (
-        <h1>Hola Tienda</h1>
+       <div class="container"> 
+            <h1>Hola Tienda</h1>
+        </div>
     )
     
     }

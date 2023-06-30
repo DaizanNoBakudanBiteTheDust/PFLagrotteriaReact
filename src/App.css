@@ -2,6 +2,24 @@ a.navbar-brand img{
   width: 100px;
 }
 
+.navbar{
+  background-color: #dc973b;
+}
+
+li.nav-item {
+  margin: 0 20px;
+}
+
+.navbar a.nav-link{
+  color: #fff;
+}
+
+
+.navbar a.nav-link.active, .navbar a.nav-link:hover{
+  color: #291b1b;
+  font-weight: bold;
+}
+
 .navbar-expand-lg .navbar-collapse{
   justify-content: center;
 }
@@ -12,6 +30,13 @@ a.navbar-brand img{
 }
 
 .carrito{
-  background-color: blue;
+  background-color: #49ada7;
   color: #fff;
+  margin-right: 20px;
+}
+
+.carrito:hover{
+  background-color: #476261;
+  color: #fff;
+  
 }
