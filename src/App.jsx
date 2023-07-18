@@ -2,7 +2,7 @@ import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 import {  Navbar } from './components/header/navbar'
-import {ItemListContainer} from './components/content/itemListContainer'
+import {ItemListContainer} from './components/itemListContainer/itemListContainer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
