@@ -5,26 +5,26 @@ export const Navbar = () => {
 
 return (
 
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src={logo}></img></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            <nav className="navbar navbar-expand-lg">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="#"><img src={logo}></img></a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="#">Inicio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Productos Sellados</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Productos Sellados</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Accesorios</a>
+                            <li className="nav-item">
+                                <a className="nav-link">Accesorios</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Eventos</a>
+                            <li className="nav-item">
+                                <a className="nav-link">Eventos</a>
                             </li>
                         </ul>
                     </div>
