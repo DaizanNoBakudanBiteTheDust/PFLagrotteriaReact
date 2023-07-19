@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { datosCartas } from '../../helpers/pedirData'
 import ItemList from '../ItemList/ItemList'
+import { Carousel } from '../Carousel/Carousel'
 import { useParams } from 'react-router-dom'
 
 const ItemListContainer = () => {
@@ -29,6 +30,7 @@ const ItemListContainer = () => {
 
     return (
         <div>
+            <Carousel/>
             {
                 loading
                     ? <h2>Cargando...</h2>

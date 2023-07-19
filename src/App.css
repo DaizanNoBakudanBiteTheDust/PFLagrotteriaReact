@@ -45,3 +45,15 @@ li.nav-item {
   width: 100%;
   height: auto;
 }
+
+.carousel-item{
+  height: 80vh;
+    width: 100%;
+}
+
+.carousel-item.active{
+  background: url(./assets/img/slide1.jpg) no-repeat;
+  background-size: contain;
+    background-position: center;
+    background-color: currentcolor;
+}
