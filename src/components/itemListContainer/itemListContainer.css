@@ -5,6 +5,8 @@ h2{
 h4{
     height: 5vh;
     text-align: center;
+    margin-bottom: 20px;
+    font-weight:normal;
 }
 
 p{

@@ -1,11 +1,11 @@
 import ItemCard from "../itemCard/itemCard"
+import "./ItemList.css"
 
 const ItemList = ({productos}) => {
 
     return (
         <div className="container">
             <h2 className="text-blue-800 text-4xl">Set de Cartas</h2>
-            <hr/>
            
            <div className='row'>
             {

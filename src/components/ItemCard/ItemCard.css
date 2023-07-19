@@ -12,3 +12,7 @@
     background-color: #cf5d71;
     color: #fff;
 }
+
+.col-md-4 div{
+    height: 45vh;
+}
