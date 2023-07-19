@@ -7,6 +7,7 @@ import {ItemDetailContainer} from './components/ItemDetailContainer/ItemDetailCo
 import {Error} from './components/Error/Error404'
 import { Footer } from './components/Footer/footer'
 import ProductosSellados from './components/ProductosSellados/ProductosSellados'
+import { PaginaEnConstruccion } from './components/PaginaEnConstruccion/PaginaEnConstruccion'
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         <Route path="/categoria/:categoryId" element={<ItemListContainer/>} />
         <Route path="/item/:itemId" element={ <ItemDetailContainer /> }/>
         <Route path="/ProductosSellados" element={ <ProductosSellados /> }/>
+        <Route path="/Accesorios" element={ <PaginaEnConstruccion img="https://images.wikidexcdn.net/mwuploads/wikidex/7/74/latest/20140625151050/Operario_%281%29_XY.png"/> }/>
+        <Route path="/Eventos" element={ <PaginaEnConstruccion img="https://web.big-bang.cl/wp-content/uploads/2019/04/qwe-min.png"/> }/>
         <Route path="*" element={ <Error /> }/>
     </Routes>
 

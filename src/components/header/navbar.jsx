@@ -23,10 +23,10 @@ return (
                                 <Link className="nav-link" to="/ProductosSellados">Productos Sellados</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link">Accesorios</Link>
+                                <Link className="nav-link" to="/Accesorios">Accesorios</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link">Eventos</Link>
+                                <Link className="nav-link" to="/Eventos">Eventos</Link>
                             </li>
                         </ul>
                     </div>
