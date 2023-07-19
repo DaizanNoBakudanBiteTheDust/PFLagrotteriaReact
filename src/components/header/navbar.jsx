@@ -20,7 +20,7 @@ return (
                                 <Link className="nav-link active" aria-current="page" to="/">Inicio</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" href="#">Productos Sellados</Link>
+                                <Link className="nav-link" to="/ProductosSellados">Productos Sellados</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link">Accesorios</Link>
