@@ -1,3 +1,5 @@
+import "./ItemDetail.css"
+
 const ItemDetail = ({item}) => {
 
     return (
@@ -8,9 +10,9 @@ const ItemDetail = ({item}) => {
             <img src={item.img} alt={item.nombre}/>
             </div>
             <div className="col-md-6">
-            <p>{item.descripcion}</p>
-            <p>Precio: ${item.precio}</p>
-            <button className="btn btn-success">Agregar</button>
+            <p>{item.description}</p>
+            <p><span>Precio: ${item.precio}</span></p>
+            <button className="btn">Agregar</button>
             </div>
             </div>
         </div>
