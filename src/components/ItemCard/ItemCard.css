@@ -1,0 +1,14 @@
+.btn{
+    background-color: pink;
+    color: #fff;
+    text-align: center;
+    margin-left: 30%;
+    width: 150px;
+    margin-bottom: 30px;
+
+}
+
+.btn:hover{
+    background-color: #cf5d71;
+    color: #fff;
+}

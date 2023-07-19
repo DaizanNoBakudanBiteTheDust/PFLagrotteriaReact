@@ -3,6 +3,7 @@ import { datosCartas } from '../../helpers/pedirData'
 import ItemList from '../ItemList/ItemList'
 import { Carousel } from '../Carousel/Carousel'
 import { useParams } from 'react-router-dom'
+import "./itemListContainer.css"
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([])

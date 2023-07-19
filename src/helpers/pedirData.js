@@ -5,6 +5,6 @@ export const datosCartas = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(dataCartas)
-        }, 2500)
+        }, 1000)
     })
 }
