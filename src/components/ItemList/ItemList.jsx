@@ -7,7 +7,7 @@ const ItemList = ({productos}) => {
             <h2 className="text-blue-800 text-4xl">Productos</h2>
             <hr/>
            
-           <div className='flex flex-row flex-wrap justify-center gap-2'>
+           <div className='row'>
             {
                 productos.map((prod) => <ItemCard key={prod.id} item={prod}/>)
             }

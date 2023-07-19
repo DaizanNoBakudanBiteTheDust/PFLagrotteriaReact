@@ -3,42 +3,42 @@
         "id": 1,
         "nombre": "151 Ultra Collection",
         "precio": 119990,
-        "img": "https://dummyimage.com/200x200/000",
+        "img": "./src/assets/img/151collection.webp",
         "category": "pokemon-151"
     },
     {
         "id": 2,
         "nombre": "Pokemon TCG: Scarlet & Violet - 151 Elite Trainer Box",
         "precio": 48990,
-        "img": "https://dummyimage.com/200x200/000",
+        "img": "./src/assets/img/151elite.webp",
         "category": "pokemon-151"
     },
     {
         "id": 3,
         "nombre": "Pokemon Scarlet & Violet 151 Zapdos Colleccion",
         "precio": 21990,
-        "img": "https://dummyimage.com/200x200/000",
+        "img": "./src/assets/img/151zapdos.webp",
         "category": "pokemon-151"
     },
     {
         "id": 4,
         "nombre": "Obsidian Flames Booster Box",
         "precio": 129990,
-        "img": "https://dummyimage.com/200x200/000",
+        "img": "./src/assets/img/obsidianBox.webp",
         "category": "Obsidian-Flames"
     },
     {
         "id": 5,
         "nombre": "Pokemon TCG: Scarlet & Violet - Obsidian Flames Trainer Box",
         "precio": 43990,
-        "img": "https://dummyimage.com/200x200/000",
+        "img": "./src/assets/img/obsidianElite.webp",
         "category": "Obsidian-Flames"
     },
     {
         "id": 6,
         "nombre": "Booster Bundle Obsidian Flames",
         "precio": 24990,
-        "img": "https://dummyimage.com/200x200/000",
+        "img": "./src/assets/img/obsidianBundle.webp",
         "category": "Obsidian-Flames"
     }
 ]
