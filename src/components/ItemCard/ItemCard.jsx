@@ -8,7 +8,7 @@ const ItemCard = ({item}) => {
             <h4>{item.nombre}</h4>
             <img src={item.img} alt={item.nombre}/>
             <p>Precio: ${item.precio}</p>
-            <Link to={`/detail/${item.id}`} className='btn btn-primary'>Ver más</Link>
+            <Link to={`/item/${item.id}`} className='btn btn-primary'>Ver más</Link>
         </div>
     )
 }
