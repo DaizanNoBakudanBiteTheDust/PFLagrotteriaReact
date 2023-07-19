@@ -32,6 +32,8 @@ const ItemListContainer = () => {
     return (
         <div>
             <Carousel/>
+
+           
             {
                 loading
                     ? <h2>Cargando...</h2>

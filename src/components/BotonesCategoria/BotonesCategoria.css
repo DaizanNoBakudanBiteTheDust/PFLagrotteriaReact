@@ -1,0 +1,23 @@
+ul.botonesFiltro{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.botonesFiltro li{
+    list-style: none;
+    background-color: #212529;
+    border-radius: 5px;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+ul.botonesFiltro li.boton2{
+    background-color: #d284c0;
+}
+
+ul.botonesFiltro li.boton3{
+    background-color: #c52d29;
+}
