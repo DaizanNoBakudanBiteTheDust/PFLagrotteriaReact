@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 import { datosCartas } from "../../helpers/pedirData"
 import { useParams } from "react-router-dom"
 import ItemDetail from "../ItemDetail/ItemDetail"
-
+import { doc, getDoc } from 'firebase/firestore'
+import {db} from '../../firebase/config'
 
 
 export const ItemDetailContainer = () => {
@@ -17,11 +18,20 @@ export const ItemDetailContainer = () => {
     useEffect(() => {
         setLoading(true)
 
-        datosCartas()
-            .then(r => {
-                setItem( r.find(prod => prod.id === Number(itemId)) )
+
+    // Armo la referencia
+        const prodRef = doc(db, "productos", itemId)
+    // Llamo referencia
+    getDoc(prodRef)
+            .then((doc) => {
+               setItem({
+                id: doc.id,
+                ...doc.data()
+               })
             })
+            .catch(e => console.log(e))
             .finally(() => setLoading(false))
+
     }, [])
 
     return (
