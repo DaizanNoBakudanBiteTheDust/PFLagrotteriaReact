@@ -19,7 +19,7 @@ function App() {
     <Navbar />  
     <Routes>
         <Route path="/" element={<ItemListContainer/>} />
-        <Route path="/categoria/:categoryId" element={<ItemListContainer/>} />
+        <Route path="/categoria/:categoryId" element={<ItemListContaner/>} />
         <Route path="/item/:itemId" element={ <ItemDetailContainer /> }/>
         <Route path="/ProductosSellados" element={ <ProductosSellados /> }/>
         <Route path="/Accesorios" element={ <PaginaEnConstruccion img="https://images.wikidexcdn.net/mwuploads/wikidex/7/74/latest/20140625151050/Operario_%281%29_XY.png"/> }/>
