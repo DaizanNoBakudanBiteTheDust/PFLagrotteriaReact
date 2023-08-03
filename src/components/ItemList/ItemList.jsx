@@ -1,4 +1,4 @@
-import ItemCard from '../itemCard/itemCard'
+import ItemCard from '../itemCard/ItemCard'
 import "./ItemList.css"
 import { BotonesCategoria } from "../BotonesCategoria/BotonesCategoria"
 
