@@ -1,5 +1,5 @@
 import logo from '../../assets/img/logoTienda.png'
-import { Carrito } from './carrito'
+import { Carrito } from './Carrito'
 
 import { Link } from 'react-router-dom'
 
