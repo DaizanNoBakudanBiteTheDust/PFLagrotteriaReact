@@ -8,7 +8,7 @@ import {db} from '../../firebase/config'
 
 // Creo la Constante Item List container
 
-const ItemListContainer = () => {
+export const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
 
@@ -53,5 +53,3 @@ const ItemListContainer = () => {
         </div>
     )
 }
-
-export default ItemListContainer
