@@ -1,7 +1,7 @@
 
 src/firebase/upload.js
 src/data
-src/helpers/*
+src/helpers
 
 # Logs
 logs
