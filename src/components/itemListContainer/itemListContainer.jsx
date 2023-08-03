@@ -44,8 +44,6 @@ const ItemListContainer = () => {
         //Llamo al Carousel y al item list container
         <div>
             <Carousel/>
-
-           
             {
                 loading
                     ? <h2>Cargando...</h2>
