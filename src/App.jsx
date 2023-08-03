@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 import {  Navbar } from './components/header/navbar'
-import ItemListContainer from './components/ItemListContainer/itemListContainer'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import {ItemDetailContainer} from './components/ItemDetailContainer/ItemDetailContainer'
 import {Error} from './components/Error/Error404'
