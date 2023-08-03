@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "./BotonesCategoria.css"
+import './BotonesCategoria.css'
 
 
 export const BotonesCategoria = () => {

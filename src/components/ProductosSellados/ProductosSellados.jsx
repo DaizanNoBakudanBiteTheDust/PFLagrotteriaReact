@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { datosCartas } from '../../helpers/pedirData'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
-import "./ProductosSellados.css"
+import './ProductosSellados.css'
 
 const ProductosSellados = () => {
     const [productos, setProductos] = useState([])

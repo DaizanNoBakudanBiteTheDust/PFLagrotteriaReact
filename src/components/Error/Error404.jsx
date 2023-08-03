@@ -1,5 +1,5 @@
 
-import "./Error404.css"
+import './Error404.css'
 
 export const Error = () => {
 

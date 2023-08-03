@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import ItemList from '../ItemList/ItemList'
 import { Carousel } from '../Carousel/Carousel'
 import { useParams } from 'react-router-dom'
-import "./itemListContainer.css"
+import './itemListContainer.css'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 import {db} from '../../firebase/config'
 

@@ -1,5 +1,5 @@
 
-import "./PaginaEnConstruccion.css"
+import './PaginaEnConstruccion.css'
 
 export const PaginaEnConstruccion = ({img}) => {
 
