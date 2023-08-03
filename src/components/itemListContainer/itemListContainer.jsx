@@ -4,7 +4,7 @@ import { Carousel } from '../Carousel/Carousel'
 import { useParams } from 'react-router-dom'
 import './itemListContainer.css'
 import { collection, getDocs, query, where } from 'firebase/firestore'
-import {db} from '../../firebase/config'
+import {db} from '../../firebase/configs'
 
 // Creo la Constante Item List container
 
