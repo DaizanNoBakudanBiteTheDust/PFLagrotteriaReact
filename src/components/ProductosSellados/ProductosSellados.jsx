@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
-import { datosCartas } from '../../helpers/pedirData'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
 import './ProductosSellados.css'
+import { collection, getDocs } from 'firebase/firestore'
+import { db } from '../../firebase/config'
 
 const ProductosSellados = () => {
     const [productos, setProductos] = useState([])
@@ -14,19 +15,26 @@ const ProductosSellados = () => {
     useEffect(() => {
         setLoading(true)
 
-        datosCartas()
-            .then(r => {
-                if (categoryId) {
-                    setProductos( r.filter(prod => prod.category === categoryId) )
-                } else {
-                    setProductos(r)
-                }
-            })
-            .catch(e => console.log(e))
-            .finally(() => {
-                setLoading(false)
-            })
-        }, [categoryId])
+     //        Armar referencia
+     const productosRef = collection(db, "productos")
+     const q = categoryId ? 
+         query(productosRef, where('category', '==', categoryId))
+         :productosRef
+//         Traer Referencia con get docs
+     getDocs(q)
+         .then((resp) => {
+             const docs = resp.docs.map((doc) => {
+                 return {
+                     id: doc.id,
+                     ...doc.data()
+                 }
+             })
+             setProductos(docs)
+         })
+         .catch(e => console.log(e))
+         .finally(() => setLoading(false))
+
+     }, [categoryId])
 
     return (
         <div>
