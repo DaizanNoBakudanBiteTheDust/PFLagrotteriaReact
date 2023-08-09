@@ -1,6 +1,21 @@
 import './ItemDetail.css'
+import { useContext, useState } from "react"
+import { CartContext } from "../../context/CartContext"
+import { Link } from "react-router-dom"
 
 const ItemDetail = ({item}) => {
+    const { agregarAlCarrito, isInCart } = useContext(CartContext)
+
+    const [cantidad, setCantidad] = useState(1)
+
+    const handleAgregar = () => {
+        const newItem = {
+            ...item,
+            cantidad
+        }
+
+        agregarAlCarrito(newItem)
+    }
 
     return (
         <div className="container">

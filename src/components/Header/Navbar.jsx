@@ -1,5 +1,5 @@
 import logo from '../../assets/img/logoTienda.png'
-import { Carrito } from './Carrito'
+import { BotonCarrito } from '../CartWidget.jsx/botoncarrito'
 
 import { Link } from 'react-router-dom'
 
@@ -32,7 +32,7 @@ return (
                     </div>
                 </div>
                
-                    <Carrito />
+                    <BotonCarrito />
                 
             </nav>
 )
