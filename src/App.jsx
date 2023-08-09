@@ -8,7 +8,7 @@ import {Error} from './components/Error/Error404'
 import { Footer } from './components/Footer/Footer'
 import ProductosSellados from './components/ProductosSellados/ProductosSellados'
 import { PaginaEnConstruccion } from './components/PaginaEnConstruccion/PaginaEnConstruccion'
-import { CartContext } from './context/CartContext'
+import { CartProvider } from './context/CartContext'
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
   return (
 
     // Se crea CartContext y el arbol de rutas de la app
-    <CartContext.Provider>
+    <CartProvider>
 
 <BrowserRouter> 
 
@@ -34,7 +34,7 @@ function App() {
     <Footer />
 
 </BrowserRouter> 
-</CartContext.Provider>
+</CartProvider>
 
   ) 
 }

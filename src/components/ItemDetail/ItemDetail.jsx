@@ -2,6 +2,7 @@ import './ItemDetail.css'
 import { useContext, useState } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Link } from "react-router-dom"
+import ItemCount from '../ItemCount/ItemCount'
 
 const ItemDetail = ({item}) => {
     const { agregarAlCarrito, isInCart } = useContext(CartContext)
@@ -27,6 +28,7 @@ const ItemDetail = ({item}) => {
             <div className="col-md-6">
             <p>{item.description}</p>
             <p><span>Precio: ${item.precio}</span></p>
+            
             <button className="btn">Agregar</button>
             </div>
             </div>
