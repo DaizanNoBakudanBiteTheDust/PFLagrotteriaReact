@@ -29,7 +29,16 @@ const ItemDetail = ({item}) => {
             <p>{item.description}</p>
             <p><span>Precio: ${item.precio}</span></p>
             
-            <button className="btn">Agregar</button>
+            {
+                isInCart(item.id)
+                    ? <Link className="btn btn-success" to="/cart">Terminar mi compra</Link>
+                    : <ItemCount 
+                        max={item.stock}
+                        cantidad={cantidad}
+                        setCantidad={setCantidad}
+                        agregar={handleAgregar}
+                    />
+            }
             </div>
             </div>
         </div>
