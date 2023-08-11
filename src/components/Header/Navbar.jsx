@@ -28,6 +28,9 @@ return (
                             <li className="nav-item">
                                 <Link className="nav-link" to="/Eventos">Eventos</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/OrdenCompra">Orden de Compra</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
