@@ -1,5 +1,5 @@
 import logo from '../../assets/img/logoTienda.png'
-import { BotonCarrito } from '../CartWidget/botoncarrito'
+import { BotonCarrito } from '../CartWidget/BotonCarrito'
 
 import { Link } from 'react-router-dom'
 
