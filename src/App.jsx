@@ -13,6 +13,7 @@ import Checkout from './components/Checkout/Checkout'
 import CartView from './components/CartView/CartView'
 import OrdenCompra from './components/OrdenDeCompra/OrdenDeCompra'
 import {OrderDetailContainer} from './components/OrderDetailContainer/OrderDetailContainer'
+import { ProductoNoEncontrado } from './components/ProductoNoEncontrado/ProductoNoEncontrado'
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/Orden/:itemId" element={ < OrderDetailContainer /> }/>
         <Route path="/cart" element={ <CartView />}/>
         <Route path="/checkout" element={ <Checkout />}/>
+        <Route path="/item/NoEncontrado" element={ <ProductoNoEncontrado /> }/>
         <Route path="*" element={ <Error /> }/>
     </Routes>
 

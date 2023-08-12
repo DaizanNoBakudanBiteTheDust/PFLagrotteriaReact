@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { doc, getDoc } from 'firebase/firestore'
 import {db} from '../../firebase/config'
@@ -8,6 +8,9 @@ import {db} from '../../firebase/config'
 export const ItemDetailContainer = () => {
     const [item, setItem] = useState(null)
     const [loading, setLoading] = useState(true)
+    const [itemExists, setItemExists] = useState(true) 
+
+    const navigate = useNavigate();
 
     const { itemId } = useParams()
 
@@ -23,16 +26,31 @@ export const ItemDetailContainer = () => {
     // Llamo referencia
     getDoc(prodRef)
             .then((doc) => {
-               setItem({
-                id: doc.id,
-                ...doc.data()
-               })
-            })
+                if (doc.exists()) {
+                    setItem({
+                        id: doc.id,
+                        ...doc.data()
+                    })
+                } else {
+                    setItem(null);
+                    setItemExists(false);
+                }
+    })
             .catch(e => console.log(e))
             .finally(() => setLoading(false))
 
     }, [])
 
+    useEffect(() => {
+        if (!itemExists) {
+            navigate("/item/NoEncontrado"); // Redirección utilizando navigate
+        }else{}
+    }, [itemExists, navigate]);
+
+
+    if(!itemExists){
+            console.log(itemExists)
+    }else{
     return (
         <div className="container">
             {
@@ -42,4 +60,5 @@ export const ItemDetailContainer = () => {
             }
         </div>
     )
+        }
 }
