@@ -1,0 +1,18 @@
+.datosOrden{
+    height: 150px;
+}
+
+.ordenPrecisa .datosOrden img {
+    width: 10%;
+    margin-top: auto;
+    float: left;
+}
+
+.ordenPrecisa .datosOrden p {
+    margin-top: auto;
+}
+
+h4.totalOrden{
+    font-weight: bolder;
+    float: right;
+}

@@ -29,7 +29,7 @@ const CartView = () => {
                         <img src={item.img} alt={item.nombre}/>
                         <p>Precio: ${item.precio * item.cantidad}</p>
                         <p>Cantidad: {item.cantidad}</p>
-                        <button onClick={() => removerDelCarrito(item.id)} className="btn btn-danger"></button>
+                        <button onClick={() => removerDelCarrito(item.id)} className="btn btn-danger">Eliminar del carrito</button>
                         <hr/>
                     </div>
                 ))

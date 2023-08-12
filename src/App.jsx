@@ -18,7 +18,6 @@ import {OrderDetailContainer} from './components/OrderDetailContainer/OrderDetai
 function App() {
   
   return (
-
     // Se crea CartContext y el arbol de rutas de la app
     <CartProvider>
 
