@@ -6,8 +6,13 @@ const OrderDetail = ({item}) => {
             <div className="col-md-12">
             <h2>Orden {item.id}</h2>
             
+            
+
             {
+
                 item.items.map((producto) => (
+               
+
                     <div className="ordenPrecisa" key={producto.id}>
                         <hr/>   
                         <h3>{producto.nombre}</h3>
@@ -17,10 +22,10 @@ const OrderDetail = ({item}) => {
                         <p>Cantidad: {producto.cantidad}</p>
                         </div>
                         <hr/>
-                        <p>Enviado a {item.cliente.direccion}</p>
                     </div>
                 ))
             }
+            <p>Enviado a {item.cliente.direccion}</p>
             <h4 className="totalOrden">Total: {item.total}</h4>
     
             
