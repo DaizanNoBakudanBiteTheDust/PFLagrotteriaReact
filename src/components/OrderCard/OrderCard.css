@@ -1,0 +1,32 @@
+.contenedor{
+    display: block;
+    border: 1px solid #dc973b;
+    border-radius: 4px;
+    padding: 20px;
+    float: left;
+    width: 100%;
+}
+h4{
+    float: left;
+}
+p{
+    font-weight: 500;
+    text-align: right;
+}
+a.btnOrder{
+    float: right;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    background-color: #fd766c;
+    padding: 4px;
+    border-radius: 7px;
+    color:#fff;
+}
+
+a.btnOrder:hover{
+    background-color: hsl(4, 77%, 52%);
+    color: #fff;
+}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import './OrderCard.css'
 
 
 const OrderCard = ({item}) => {
@@ -17,9 +18,12 @@ const OrderCard = ({item}) => {
 
     return (
         <div className='col-md-12'>
+            <div className="contenedor">
             <h4>Orden {item.id}</h4>
             <p className="right">Fecha: {formattedFecha}</p>
-            <Link to={`/item/${item.id}`} className='btn'>Ver más</Link>
+            
+            <Link to={`/Orden/${item.id}`} className='btnOrder'>Ver Orden de compra</Link>
+            </div>
         </div>
     )
 }
