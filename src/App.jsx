@@ -14,6 +14,7 @@ import CartView from './components/CartView/CartView'
 import OrdenCompra from './components/OrdenDeCompra/OrdenDeCompra'
 import {OrderDetailContainer} from './components/OrderDetailContainer/OrderDetailContainer'
 import { ProductoNoEncontrado } from './components/ProductoNoEncontrado/ProductoNoEncontrado'
+import Accesorios from './components/Accesorios/Accesorios'
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
         <Route path="/categoria/:categoryId" element={<ItemListContainer/> } />
         <Route path="/item/:itemId" element={ <ItemDetailContainer /> }/>
         <Route path="/ProductosSellados" element={ <ProductosSellados /> }/>
-        <Route path="/Accesorios" element={ <PaginaEnConstruccion img="https://images.wikidexcdn.net/mwuploads/wikidex/7/74/latest/20140625151050/Operario_%281%29_XY.png"/> }/>
+        <Route path="/Accesorios" element={ <Accesorios /> }/>
         <Route path="/Eventos" element={ <PaginaEnConstruccion img="https://web.big-bang.cl/wp-content/uploads/2019/04/qwe-min.png"/> }/>
         <Route path="/OrdenCompra/" element={ < OrdenCompra /> }/>
         <Route path="/Orden/:itemId" element={ < OrderDetailContainer /> }/>

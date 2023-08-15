@@ -14,32 +14,41 @@ export const ItemDetailContainer = () => {
 
     const { itemId } = useParams()
 
-    console.log(itemId)
-    console.log(item)
-
     useEffect(() => {
         setLoading(true)
 
 
     // Armo la referencia
         const prodRef = doc(db, "productos", itemId)
-    // Llamo referencia
-    getDoc(prodRef)
-            .then((doc) => {
-                if (doc.exists()) {
-                    setItem({
-                        id: doc.id,
-                        ...doc.data()
-                    })
-                } else {
-                    setItem(null);
-                    setItemExists(false);
-                }
+        const accesoriosRef = doc(db, "Accesorios", itemId)
+
+    // Llamo referencias 
+
+    Promise.all([getDoc(prodRef), getDoc(accesoriosRef)])
+    .then(([prodDoc, accesoriosDoc])  => {
+        if (prodDoc.exists()) {
+            setItem({
+                id: prodDoc.id,
+                ...prodDoc.data()
+            });
+            setItemExists(true);
+        } else if (accesoriosDoc.exists()) {
+            setItem({
+                id: accesoriosDoc.id,
+                ...accesoriosDoc.data()
+            });
+            setItemExists(true);
+        } else {
+            setItem(null);
+            setItemExists(false);
+        }
     })
             .catch(e => console.log(e))
             .finally(() => setLoading(false))
 
-    }, [])
+    }, [itemId])
+
+    
 
     useEffect(() => {
         if (!itemExists) {
@@ -48,9 +57,7 @@ export const ItemDetailContainer = () => {
     }, [itemExists, navigate]);
 
 
-    if(!itemExists){
-            console.log(itemExists)
-    }else{
+    
     return (
         <div className="container">
             {
@@ -61,4 +68,4 @@ export const ItemDetailContainer = () => {
         </div>
     )
         }
-}
+

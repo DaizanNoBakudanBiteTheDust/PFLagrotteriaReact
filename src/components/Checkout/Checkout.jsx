@@ -52,14 +52,30 @@ const Checkout = () => {
         const batch = writeBatch(db)
         const ordersRef = collection(db, "orders")
         const productosRef = collection(db, "productos")
+        const accesoriosRef = collection(db, "accesorios")
         const q = query(productosRef, where( documentId(), "in", cart.map(item => item.id) ))
+        const q2 = query(accesoriosRef, where( documentId(), "in", cart.map(item => item.id) ))
 
         const productos = await getDocs(q)
+        const accesorios = await getDocs(q2)
         const outOfStock = []
 
         // verifica si hay stock del producto si no hay stock se quita del carro
 
         productos.docs.forEach((doc) => {
+            const item = cart.find(prod => prod.id === doc.id )
+            const stock = doc.data().stock
+                
+            if (stock >= item.cantidad) {
+                batch.update(doc.ref, {
+                    stock: stock - item.cantidad
+                })
+            } else {
+                outOfStock.push(item)
+            }
+        })
+
+        accesorios.docs.forEach((doc) => {
             const item = cart.find(prod => prod.id === doc.id )
             const stock = doc.data().stock
                 
@@ -91,7 +107,7 @@ const Checkout = () => {
     if (orderId) {
         return (
             <div className="container my-5">
-                <h2 className="text-4xl">Tu compra se registró exitosamente!</h2>
+                <h2 className="text-center">Tu compra se registró exitosamente!</h2>
                 <hr/>
                 <p>Tu número de orden es: <strong>{orderId}</strong></p>
 

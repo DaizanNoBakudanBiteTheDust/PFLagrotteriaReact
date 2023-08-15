@@ -42,6 +42,7 @@ li.nav-item {
 }
 
 .col-md-4 img{
+  display: block;
   width: 100%;
   height: auto;
 }
