@@ -26,7 +26,7 @@ const OrderDetail = ({item}) => {
                 ))
             }
             <p>Enviado a {item.cliente.direccion}</p>
-            <h4 className="totalOrden">Total: {item.total}</h4>
+            <h4 className="totalOrden">Total: ${item.total}</h4>
     
             
           
