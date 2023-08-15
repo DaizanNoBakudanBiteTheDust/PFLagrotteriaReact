@@ -106,7 +106,7 @@ const Checkout = () => {
 
     if (orderId) {
         return (
-            <div className="container my-5">
+            <div className="container">
                 <h2 className="text-center">Tu compra se registró exitosamente!</h2>
                 <hr/>
                 <p>Tu número de orden es: <strong>{orderId}</strong></p>
@@ -124,7 +124,7 @@ const Checkout = () => {
 // Contenido del Checkout
 
     return (
-        <div className="container my-5">
+        <div className="container">
             <h2>Checkout</h2>
             <hr/>
 
