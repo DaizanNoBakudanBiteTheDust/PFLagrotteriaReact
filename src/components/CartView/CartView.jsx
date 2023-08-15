@@ -10,8 +10,8 @@ const CartView = () => {
 
     if (cart.length === 0) {
         return (
-            <div className="container my-5">
-                <h2 className="text-4xl">Tu carrito está vacío :(</h2>
+            <div className="container">
+                <h2 className="text-center">Tu carrito está vacío :(</h2>
                 <hr/>
                 <Link to="/" className="btn btn-success">Ir a comprar</Link>
             </div>
@@ -19,8 +19,8 @@ const CartView = () => {
     }
 
     return (
-        <div className="container my-5">
-            <h2 className="text-4xl">Tu compra</h2>
+        <div className="container">
+            <h2 className="text-center">Tu compra</h2>
             <hr/>
 
             {
@@ -37,7 +37,7 @@ const CartView = () => {
             }
 
             <div className="totalCompra">
-                <h4 className="text-3xl my-2">Total: ${totalCompra()}</h4>
+                <h4 className="t">Total: ${totalCompra()}</h4>
                 <button onClick={vaciarCarrito} className="btn btn-danger">Vaciar carrito</button>
                 <Link className="btn btn-success mx-2" to="/checkout">Terminar mi compra</Link>
             </div>            

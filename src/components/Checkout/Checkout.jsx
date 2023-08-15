@@ -140,13 +140,13 @@ const Checkout = () => {
             >
                 {() => (
                     <Form>
-                        <Field placeholder="Tu nombre" className="form-control my-2" type="text" name="nombre"/>
+                        <Field placeholder="Tu nombre" className="form-control" type="text" name="nombre"/>
                         <ErrorMessage name="nombre" component="p"/>
-                        <Field placeholder="Tu direccion" className="form-control my-2" type="text" name="direccion"/>
+                        <Field placeholder="Tu direccion" className="form-control" type="text" name="direccion"/>
                         <ErrorMessage name="direccion" component="p"/>
-                        <Field placeholder="Tu email" id="email1" className="form-control my-2" type="email" name="email"/>
+                        <Field placeholder="Tu email" id="email1" className="form-control" type="email" name="email"/>
                         <ErrorMessage name="email" component="p"/>
-                        <Field placeholder="Verifica tu email" id="email2" className="form-control my-2" type="email" name="reEmail"/>
+                        <Field placeholder="Verifica tu email" id="email2" className="form-control" type="email" name="reEmail"/>
                         <ErrorMessage name="reEmail" component="p"/>
                         <button className="btn btn-success" disabled={loading}>Enviar</button>
                     </Form>

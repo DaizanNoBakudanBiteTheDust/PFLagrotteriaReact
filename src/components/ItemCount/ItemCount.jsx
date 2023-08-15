@@ -37,7 +37,7 @@ const ItemCount = ({max, cantidad, setCantidad, agregar}) => {
             </button>
 
             <br/>
-            <button onClick={agregar} className="btn btn-success my-2">Agregar</button>
+            <button onClick={agregar} className="btn btn-success">Agregar</button>
 
         </div>
     )

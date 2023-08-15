@@ -42,7 +42,7 @@ const OrdenCompra = () => {
 
         if (orders.length === 0) {
             return (
-                <div className="container my-5">
+                <div className="container">
                     <h2>Realiza una compra para poder ver las ordenes de compra</h2>
                     <hr/>
                     <Link to="/" className="btn btn-success">Ir a comprar</Link>
